@@ -1,0 +1,19 @@
+{
+  "format": "DWCMODEL1",
+  "architecture": "Conv16-MaxPool2-Conv32-MaxPool2-Conv64-AdaptiveMaxPool4x4-FC128-FC12 shared-character-alignment-scan",
+  "input": "raw and thin-line-opened dominant RGBA-color masks, 50x6 crops of 2x44x80 float32",
+  "charset": "0123456789 plus blank category and alignment logit",
+  "weights_sha256": "1d5bf86ed2fa44df4ea912f2b4840f1a6fe2d232ba47250734f609153cafc9a6",
+  "training": "upstream-equivalent synthetic DriverDigit generator, then 50 labeled real fixtures with crop translation augmentation",
+  "upstream_commit": "74e19a0404aa30abaf93a9dcc4dfce96e9b53a8d",
+  "synthetic_training_seed": 20260815,
+  "epochs": 22,
+  "steps_per_epoch": 50,
+  "batch_size": 12,
+  "real_fine_tune_steps": 700,
+  "online_fine_tune_steps": 900,
+  "online_learning_rate": 3e-05,
+  "online_replay": "online:fixed:synthetic=1:1:1",
+  "online_training_samples": 142,
+  "real_fixed_accuracy": "39/50"
+}
