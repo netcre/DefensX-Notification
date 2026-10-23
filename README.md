@@ -8,7 +8,7 @@
 
 # 1. 项目简介
 
-Windows 交互式托盘程序，监控盾网“云机房” `netbar_guid=2547092390`；每 30 秒采集，终端数严格超过实时 VIP 额度时通知钉钉。不是通用多租户平台，也不是 Web 服务。仓库名 DefensX-Notification，解决方案/程序集保留 DwhMonitor。App csproj 声明版本 **1.0.0**，不是已发布 Tag 的证明。
+Windows 交互式托盘程序，监控盾网“云机房”；每 30 秒采集，终端数严格超过实时 VIP 额度时通知钉钉。不是通用多租户平台，也不是 Web 服务。仓库名 DefensX-Notification，解决方案/程序集保留 DwhMonitor。App csproj 声明版本 **1.0.0**，不是已发布 Tag 的证明。
 
 本次 Windows x64 / .NET SDK 10.0.302：Release 测试 **43/43、0 跳过**，构建、格式检查和自包含发布通过；有 NU1903 告警。未执行真实登录、真实机器人发送或正式客户端启动。见 [验证记录](docs/VERIFICATION.md)。
 
